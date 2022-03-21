@@ -44,7 +44,7 @@ def printMenu():
 		
 # Function: switcher for Main menu
 def doOption(option,cf):
-	if (option == 0)"
+	if (option == 0):
 		return 1
 	printLogo()
 	printTable()
