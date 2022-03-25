@@ -141,7 +141,6 @@ def getRecordInfo(cf):
 
 # Function: add a DNS record
 def addRecord(cf):
-	listZones(cf)
 	zone_id = getZone(cf)
 	type = input("Record type (A, MX, TXT, CNAME...): ")
 	name = input("Record name (without domain.com): ")
@@ -151,7 +150,6 @@ def addRecord(cf):
 
 # Function: update a DNS record
 def updateRecord(cf):
-	listZones(cf)
 	zone_id = getZone(cf)
 	getRecordInfo(cf)
 	record_id = input("Record ID: ")
@@ -165,7 +163,6 @@ def updateRecord(cf):
 # Function: delete a DNS record
 def deleteRecord(cf):
 	updateRecords(cf)
-	listZones(cf)
 	zone_id = getZone(cf)
 	getRecordInfo(cf)
 	record_id = input("Record ID: ")
