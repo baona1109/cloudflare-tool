@@ -76,6 +76,7 @@ def listZones(cf):
 	for zone in zones:
 		zone_name = zone['name']
 		print("%d. %s" % (count,zone_name))
+		count += 1
 	return 1
 
 # Function: get zone ID
